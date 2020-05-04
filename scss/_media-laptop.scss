@@ -1,0 +1,49 @@
+@media (max-width: $laptop-size) {
+    button {
+        font-size: 14px;
+        padding: 14px 22px;
+        /* меняет внешний вид курсора при наведении на кнопку */
+        cursor: pointer;
+        transition: 300ms;
+    }
+    
+    .main-content-wrap {
+        .header {
+            padding: 10px 5%;
+            justify-content: space-between;
+            .hamburger {
+                display: flex;
+            }
+            .menu,
+            .social-networks {
+                display: none;
+            }
+        }
+        .main-section {
+            &__title {
+                line-height: 50px;
+                margin-bottom: 20px;
+            }
+            &__title,
+            &__subtitle {
+                padding: 0 5%;
+            }
+            .product-card {
+                padding: 40px;
+                width: 95%;
+                &__title,
+                &__description-content {
+                    width: auto;
+                }
+                .price {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        .instagram-headline{
+            font-size: 7vw;
+            top: -6.4vw;
+        }
+    }
+}

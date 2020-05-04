@@ -1,0 +1,189 @@
+@media (max-width: $tablet-size) {
+    button {
+        font-size: 14px;
+        padding: 14px 22px;
+        /* меняет внешний вид курсора при наведении на кнопку */
+        cursor: pointer;
+        transition: 300ms;
+    }
+    
+    .main-content-wrap {
+        .header {
+            padding: 10px 5%;
+            justify-content: space-between;
+            .hamburger {
+                display: flex;
+            }
+            .menu,
+            .social-networks {
+                display: none;
+            }
+        }
+        .main-section {
+            &__title {
+                line-height: 50px;
+                margin-bottom: 20px;
+            }
+            &__title,
+            &__subtitle {
+                padding: 0 5%;
+            }
+            .product-card {
+                padding: 40px;
+                width: 95%;
+                flex-wrap      : wrap;
+                justify-content: center;
+                &__title,
+                &__description-content {
+                    width: auto;
+                }
+                .price {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        .about-section__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-section__article:before {
+            display: none;
+        }
+
+        .about-section__article {
+            margin: 15.625vw 0 0 0;
+            padding: 4% 6%;
+            width: 80%;
+            box-shadow: 1.25rem 1.25rem 3.125rem 0.3125rem rgba(0,0,0,0.32);
+        }
+
+        .about-section__article-title{
+            font: 1.125rem "Montserrat", sans-serif;
+            margin: 2% 0 6%;
+        }
+        
+        .about-section__article-icon{
+            margin: 4% 0;
+        }
+        
+        .about-section__article-text{
+            margin: 5% 0;
+            font-style: italic;
+            line-height: 2.375rem;
+            font-size: 1.375rem;
+            font-family: "Playfair Display", sans-serif;
+        }
+        
+        .about-section__video{
+            margin-top: 10vw;
+            width: 70%;
+            margin-bottom: 10vw;
+        }
+    }
+
+    .team-section__profile-name{
+        font-size: 1rem;
+    }
+
+    .team-sectiom__profile-tag{
+        font: 0.7rem "Raleway", sans-serif;
+    }
+
+    .team-sectiom__profile-location{
+        font: 0.7rem "Raleway", sans-serif;
+    }
+    .blog-section__title{
+        margin-top: 30px;
+    }
+
+    .blog-section__list{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+
+    .blog-section__list-item{
+        display: flex;
+        margin: 0;
+        width: 100%;
+    }
+
+    .blog-section__item-img__container{
+        position: relative;
+        flex: 1 0 40%;
+        height: 40%;
+        
+    }
+
+    .blog-section__item-text{
+        margin: 4%;
+    }
+
+
+
+    .social-section{
+        box-shadow: 1.25rem 1.25rem 3.125rem 0.3125rem rgba(0,0,0,0.32);
+        .instagram__photo {
+            display: none;
+        }
+    
+        .instagram-headline{
+            display: none;
+        }
+    
+        .instagram__footer{
+            width: 100%;
+            box-shadow: 3px 3px 3px 3px #0000001f;
+            height: 60px;
+            padding: 0;
+            padding-left: 20px;
+        }
+
+        .social-section__instagram{
+            margin: 0;
+            width: 50%;
+            flex-direction: row;
+        }
+
+        .social-section__facebook{
+            .facebook__profile{
+                display: none;
+
+            }
+            padding-top: 15px;
+            display: block;
+            justify-content: center;
+            align-self: center;
+            .facebook__members{
+                display: none;
+            }
+            padding: 0;
+            margin: 0;
+            width: 50%;
+            height: 60px;
+            background-image: linear-gradient(to bottom, #385490 50%,  #385490 50%);
+        }
+
+        .facebook__logo {
+            margin: 15px auto;
+        }
+
+        .footer__wrapper {
+        }
+    }
+
+    .footer__nav{
+        width: 100%;
+        margin: 20px auto;
+        padding: 0;
+
+        .nav__link_bottom{
+            width: 20%;
+            margin: 0 0 0 5%;
+        }
+    }
+}

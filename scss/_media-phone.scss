@@ -1,0 +1,113 @@
+@media (max-width: $phone-size) {
+    button {
+        font-size: 14px;
+        padding: 14px 22px;
+        /* меняет внешний вид курсора при наведении на кнопку */
+        cursor: pointer;
+        transition: 300ms;
+    }
+    
+    .main-content-wrap {
+        .header {
+            padding: 10px 5%;
+            justify-content: space-between;
+            .hamburger {
+                display: flex;
+            }
+            .menu,
+            .social-networks {
+                display: none;
+            }
+        }
+        .main-section {
+
+            &__title {
+                line-height: 50px;
+                margin-bottom: 20px;
+            }
+
+            &__title,
+            &__subtitle {
+                padding: 0 5%;
+            }
+
+            .product-card {
+                padding: 40px;
+                width: 100%;
+                
+                &__title,
+                &__description-content {
+                    width: auto;
+                }
+                &__image {
+                    display: none;
+                }
+                .price {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        .about-section__article {
+            padding: 4% 6%;
+            width: 90%;
+            box-shadow: 1.25rem 1.25rem 3.125rem 0.3125rem rgba(0,0,0,0.32);
+
+            .about-section__article-text{
+                margin: 5% 0;
+                font-style: italic;
+                line-height: 2rem;
+                font-size: 1.125rem;
+                font-family: "Playfair Display", sans-serif;
+            }
+        }
+
+        .team-section{
+            .team-section__list{
+                align-items: center;
+                flex-flow: column wrap;
+                width: 60%;
+            }
+        
+            .team-section__list-item{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                font: 0.7rem "Raleway", sans-serif;
+            }
+        
+            .team-section__list-item:nth-child(even){
+                right: 0px;
+                bottom: -10px;
+                top: 0px;
+                z-index:2;
+                margin-left: 10px;
+                right: -30px;
+            }
+            
+            .profile-description{
+                width: 70%;
+            }
+            .team-section__list-item:not(:first-child){
+                margin-left: 0px;
+                margin-top: -10px;
+            }
+        
+            .team-section__profile-avatar{
+                margin-left: 5%
+            }
+        }
+
+        .blog-section__item-img__container{
+            position: relative;
+            flex: 1 0 40%;
+            height: 40%;
+            
+        }
+
+        .blog-section__item-text{
+            font-size: 0.7rem;
+            line-height: 1rem;
+        }
+    }
+}
