@@ -983,6 +983,66 @@ section {
   overflow: hidden;
 }
 
+.purchase-window {
+  display: none;
+}
+
+.purchase-window__active {
+  background-color: white;
+  display: block;
+  position: fixed;
+  z-index: 150;
+  top: 30%;
+  height: 300px;
+  left: 35%;
+  width: 345px;
+  height: 270px;
+  -webkit-box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.527);
+          box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.527);
+}
+
+.purchase-window__active .price {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 0px;
+}
+
+.name {
+  margin: 30px 45px 30px 45px;
+  border: none;
+  color: #4d4d4d;
+  font: 1.3rem/2.125rem "Raleway", sans-serif;
+  height: 34px;
+  padding: 0 0 0 4px;
+  border-bottom: 0.0625rem solid #4d4d4d;
+}
+
+.phone {
+  margin: 10px 45px 30px 45px;
+  border: none;
+  color: #4d4d4d;
+  font: 1.3rem/2.125rem "Raleway", sans-serif;
+  height: 34px;
+  padding: 0 0 0 4px;
+  border-bottom: 0.0625rem solid #4d4d4d;
+}
+
+.success_msg {
+  margin-top: -20px;
+  color: green;
+  display: none;
+}
+
+.fail_msg {
+  margin-top: -20px;
+  color: red;
+  display: none;
+}
+
 @media (max-width: 1200px) {
   button {
     font-size: 14px;
