@@ -96,6 +96,10 @@ button:hover{
     background-color: $active-color;
 }
 
+.header .hamburger {
+    display: none;
+    z-index: 120;
+}
 .header .social-networks .social-networks__link {
     width: 36px;
     height: 36px;
@@ -845,4 +849,50 @@ section{
     font-family: "Raleway", sans-serif;
     padding: 10px 0 10px 30px;
     width: 50%;
+}
+
+
+.hamburger-menu{
+    transition: .5s;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    right: 0px;
+    top: 0;
+    padding-top: 50px;
+    padding-right: 35px;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0px -8px 30px 30px rgba(0, 0, 0, 0.34);
+    ul{
+        display:inline-block;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .menu__item{
+        margin: 20px 10px;
+        height: 20px;
+        .menu__link{
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            padding: 10px 10px;
+            transition: 300ms;
+        }
+    }
+    .menu__link:hover{
+        color: #fff;
+        background-color: $active-color;
+    }
+}
+
+.hamburger-menu::before{
+    content: " ";
+    position: absolute;
+    width: 1000%;
+    height: 100%;
+    top: 0;
+    left: -1000%;
+    z-index: 120;
+    background-color: black;
+    opacity: 40%;
 }
