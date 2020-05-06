@@ -905,6 +905,7 @@ section{
 .purchase-window{
     display: none;
 }
+
 .purchase-window__active{
     background-color: white;
     display: block;
@@ -912,7 +913,6 @@ section{
     z-index: 150;
     top: 30%;
     height: 300px;
-    left: 35%;
     width: 345px;
     height: 270px;
 
