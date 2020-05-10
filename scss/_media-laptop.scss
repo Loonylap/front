@@ -5,6 +5,7 @@
         /* меняет внешний вид курсора при наведении на кнопку */
         cursor: pointer;
         transition: 300ms;
+        z-index: 100;
     }
     
     .main-content-wrap {

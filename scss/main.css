@@ -1052,6 +1052,7 @@ section {
     cursor: pointer;
     -webkit-transition: 300ms;
     transition: 300ms;
+    z-index: 100;
   }
   .main-content-wrap .header {
     padding: 10px 5%;
