@@ -408,7 +408,9 @@ section{
     position: relative;
     width: 26%;
     background-color: #fff;
-    box-shadow: 1.25rem 1.25rem 3.125rem 1.25rem rgba(0,0,0,0.2);
+    
+    box-shadow: 0.25rem 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+    
     border-radius: 0.75rem;
     transition: 300ms;
     font-size: 1rem;
@@ -427,6 +429,8 @@ section{
 
 .team-section__list-item:hover{
     background-color: $active-color;
+    box-shadow: -0.25rem 0.25rem 0.125rem -0.25rem #00b0ffaa;
+    z-index: 100;
 }
 
 .team-section__profile-avatar{

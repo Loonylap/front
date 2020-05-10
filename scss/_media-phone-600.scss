@@ -1,0 +1,33 @@
+@media (max-width: $phone-size-600) {
+    .social-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-section .social-section__facebook{
+        width: 100%;
+    }
+
+    .social-section .social-section__instagram{
+        width:100%;
+    }
+
+    .social-section .instagram__footer{
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .social-section .instagram__footer{
+        padding-left: 0;
+    }
+
+    .main-content-wrap .main-section__title{
+        font-size: 2rem;
+    }
+
+    .main-content-wrap .main-section__subtitle {
+        font-size: 1.25rem;
+        color:#46ddff;
+        text-shadow: 0px 3px 15px rgba(114, 246, 255, 0.64);
+    }
+}

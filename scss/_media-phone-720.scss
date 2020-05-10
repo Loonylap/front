@@ -1,4 +1,4 @@
-@media (max-width: $phone-size) {
+@media (max-width: $phone-size-720) {
     button {
         font-size: 14px;
         padding: 14px 22px;
@@ -109,5 +109,7 @@
             font-size: 0.7rem;
             line-height: 1rem;
         }
+
+        
     }
 }

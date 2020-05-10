@@ -186,4 +186,28 @@
             margin: 0 0 0 5%;
         }
     }
+
+    .footer__subscribe {
+        margin-bottom: 85px;
+        margin-right: 17.094017094%;
+        width: 100%;
+    }
+
+    .footer__copyright {
+        -ms-flex-item-align: start;
+        align-self: center;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 12px;
+    }
+
+    .footer__subscribe {
+        margin-bottom: 85px;
+        width: 80%;
+        margin: 0 auto 12% auto;
+    }
+
+    .main-content-wrap .team-section .team-section__list {
+        margin-right: 10%;
+    }
 }
