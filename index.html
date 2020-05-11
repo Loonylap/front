@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name= "description" content="Surfers Co.">
         <meta charset="utf-8" />
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./scss/main.css">
         <title>Surfers Co.</title>
     </head>
     <body>
@@ -13,6 +15,7 @@
                 <div class="header__logo">
                     <a href="#">Surfers Co.</a>
                 </div>
+                <img src="./assets/img/hamburger.png" alt="" class="hamburger">
                 <nav class="menu">
                     <ul>
                         <li class="menu__item">
@@ -56,6 +59,7 @@
             </header>
             
             <main>
+              <p><a name="boards"></a></p>
                 <article class="main-section">
                     <div class="wrapper">
                         <h1 class="main-section__title">
@@ -66,6 +70,18 @@
                         </h2>
                     </div>
                     <div class="product-card">
+                      <div class="purchase-window" id="3">
+          
+                        <input class="name" maxlength="25" size="20" placeholder="Your name">
+                        <input class="phone" maxlength="25" size="20" placeholder="Your phone">
+
+                        <div class="price">
+                          <p class="price__content">$499.99</p>
+                          <button id="1" class="price__button">Buy now</button>
+                        </div>
+                        <p class="success_msg">Success!</p>
+                        <p class="fail_msg">Fail!</p>
+                      </div>
                         <img src="./assets/img/board.png" alt="image" class="product-card__image">
                         <div class="product-card__description">
                             <h4 class="product-card__title">
@@ -87,13 +103,13 @@
                             </p>
                             <div class="price">
                                 <p class="price__content">$499.99</p>
-                                <button class="price__button">Buy now</button>
+                                <button id="2" class="price__button">Buy now</button>
                             </div>
                             <a href="#" class="product-card__button_view-all link">View all boards</a>
                         </div>
                     </div>
                 </article>
-
+                <p><a name="about"></a></p>
                 <section class="about-section">
                     <h3 class="headline">About us</h3>
                     <div class="about-section__content container">
@@ -117,8 +133,8 @@
                         </article>
                         <img class="about-section__video" src="./assets/img/video.jpg" alt="">
                     </div>
+                    <p><a name="team"></a></p>
                 </section>
-
                 <section class="team-section">
                     <h3 class="headline">Our team</h3>
                     <div class="team-section__content container">
@@ -127,49 +143,57 @@
 
                             <li class="team-section__list-item">
                                 <img class="team-section__profile-avatar" src="./assets/img/profile__avatar1.jpg" alt="">
-                                <p class="team-section__profile-name">Taj Burrow</p>
+                                <div class="profile-description">
+                                                                  <p class="team-section__profile-name">Taj Burrow</p>
                                 <p class="team-section__profile-tag">@tagamos</p>
                                 <div class="team-section__profile-wave"></div>
                                 <p class="team-section__profile-location"> 
                                     Yallingup, Australia
                                 </p>
+                                </div>
                             </li>
 
                             <li class="team-section__list-item">
                                 <img class="team-section__profile-avatar" src="./assets/img/profile__avatar2.jpg" alt="">
-                                <p class="team-section__profile-name">Malia Manuel</p>
+                                <div class="profile-description">
+                                                                  <p class="team-section__profile-name">Malia Manuel</p>
                                 <p class="team-section__profile-tag">@maliamanuel</p>
                                 <div class="team-section__profile-wave"></div>
                                 <p class="team-section__profile-location"> 
                                     Wailua, Hi
                                 </p>
+                                </div>
                             </li>
 
                             <li class="team-section__list-item">
                                 <img class="team-section__profile-avatar" src="./assets/img/profile__avatar3.jpg" alt="">
+                                <div class="profile-description">
                                 <p class="team-section__profile-name">Ian Walsh</p>
                                 <p class="team-section__profile-tag">@ian.walsh</p>
                                 <div class="team-section__profile-wave"></div>
                                 <p class="team-section__profile-location"> 
                                     Maui, Hi
                                 </p>
+                                </div>
                             </li>
 
                             <li class="team-section__list-item">
+                      
                                 <img class="team-section__profile-avatar" src="./assets/img/profile__avatar4.jpg" alt="">
-                                <p class="team-section__profile-name">Macy Callaghan</p>
+                                <div class="profile-description">                                <p class="team-section__profile-name">Macy Callaghan</p>
                                 <p class="team-section__profile-tag">@macyjanecallaghan</p>
                                 <div class="team-section__profile-wave"></div>
                                 <p class="team-section__profile-location"> 
                                     San Clemente, CA
                                 </p>
+                              </div>
                             </li>
 
                         </ul>
                         <div class="team-section__button-next arrow-button"></div>
                     </div>
                 </section>
-
+                <p><a name="blog"></a></p>
                 <section class="blog-section">
                     <div class="blog-section__content container">
                         <p class="blog-section__title">
@@ -216,13 +240,10 @@
                 </section>
                 
 
-
-                
-
-
+                <p><a name="social"></a></p>
                 <div class="social-section container">
                     <h3 class="instagram-headline">instagram</h3>
-                    <span class="social-section__instagram instagram">
+                    <div class="social-section__instagram instagram">
                       <a class="instagram__link" href="#">
                         <img alt="" class="instagram__photo" src="./assets/img/instagram__photo.jpg">
                         <footer class="instagram__footer">
@@ -232,8 +253,8 @@
                           <span class="instagram__nickname">@surfersco</span>
                         </footer>
                       </a>
-                    </span>
-                    <span class="social-section__facebook facebook">
+                    </div>
+                    <div class="social-section__facebook facebook">
                       <a class="facebook__logo" href="#"></a>
                       <div class="facebook__profile">
                         <a class="facebook__description" href="#">
@@ -310,19 +331,19 @@
                           </ul>
                         </div>
                       </div>
-                    </span>
+                    </div>
                 </div>
                 <footer class="footer">
                   <div class="footer__wrapper container">
                     <nav class="footer__nav">
-                      <a class="nav__link_bottom" href="#">About</a>
-                      <a class="nav__link_bottom" href="#">Boards</a>
+                      <a class="nav__link_bottom" href="#about">About</a>
+                      <a class="nav__link_bottom" href="#boards">Boards</a>
                       <a class="nav__link_bottom" href="#">Accessories</a>
-                      <a class="nav__link_bottom" href="#">Blog</a>
+                      <a class="nav__link_bottom" href="#blog">Blog</a>
                       <a class="nav__link_bottom" href="#">Technology</a>
-                      <a class="nav__link_bottom" href="#">Team</a>
+                      <a class="nav__link_bottom" href="#team">Team</a>
                       <a class="nav__link_bottom" href="#">Dealers</a>
-                      <a class="nav__link_bottom" href="#">Contact us</a>
+                      <a class="nav__link_bottom" href="#social">Contact us</a>
                     </nav>
                     <div class="footer__copyright copyright">
                       © 2017 Surfers Co. &nbsp; ● &nbsp; Design by @lucaalco
@@ -339,5 +360,8 @@
                 </footer>
             </main>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./js/src/hamburger.js"></script>
+        <script src="./js/src/query.js"></script>
     </body>
 </html>

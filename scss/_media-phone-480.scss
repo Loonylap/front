@@ -1,0 +1,29 @@
+@media (max-width: $phone-size-480) {
+    .main-content-wrap .team-section .team-section__list-item {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font: 0.5rem "Raleway", sans-serif;
+    }
+
+    .main-content-wrap .team-section .team-section__profile-avatar {
+        margin-left: 5%;
+        width: 30%;
+    }
+
+    .nav__link_bottom {
+        font-size: 0.75rem;
+    }
+
+    .team-section__profile-name {
+        font-size: 0.8rem;
+    }
+
+    .team-section__list-item {
+        margin: 5px 0;
+    }
+}
