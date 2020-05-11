@@ -15,6 +15,7 @@ $('#1').click(function () {
     let ln = $(".phone").val();
     $.ajax({
         url: "https://httpbin.org/status/200",
+        data: fn&ln,
         success: function () {
             $('.success_msg').toggle()
         },
